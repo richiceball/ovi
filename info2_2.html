@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Diseño de Sitios Web</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="OVI de Diseño de Sitios Web" />        
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+                <link rel="stylesheet" href="css/skel-noscript.css" />
+                <link rel="stylesheet" href="css/style.css" />
+                <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    </head>
+    <body class="right-sidebar">
+        <div id="header">
+            <div class="container">                
+                <div id="logo">
+                    <h1><a href="index.html">Diseño de Sitios Web</a></h1>
+                </div>                
+                <nav id="nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                        <li><a href="info1.html">SVC</a></li>
+                        <li><a href="info2_1.html">GIT</a></li>
+                        <li><a href="info3.html">GIT en el Servidor</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+	<section id="page">
+            <div id="main" class="container">
+                <div class="row">
+                    <div class="9u">
+                        <section>
+                            <header>
+                                <h2>PRINCIPALES COMANDOS</h2>
+                            </header>
+                            <p>Para iniciar con Git es necesario configurar la identidad de la persona, en cada una de las máquinas de desarrollo, esto con el fin de conocer quien realiza los cambios, para lo cual lo único que es necesario realizar es ejecutar los siguientes comandos desde la consola de comandos de sistema operativo:</p>
+                            <figure><img src="images/pic06_1.png" alt="" class="image full"></figure>
+                            <h3>Crear el repositorio de configuraciones</h3>
+                            <p>Es posible crear un repositorio en Git independiente, sin necesidad de usar uno de los ya existentes, de los cuales hablaremos mas adelante, para ello solo es necesario instalar Git Server y luego de esta ubicado en la carpeta que contendrá el repositorio, ejecutaremos:</p>
+                            <figure><img src="images/pic06_2.png" alt="" class="image full"></figure>
+                            <h3>Crear una copia del proyecto</h3>
+                            <p>Desde una máquina local, donde se realizará las modificaciones, se ejecutará el siguiente comando para crear un clon de la versión almacenada, desde aquí se empezará a desarrollar la aplicación.</p>
+                            <figure><img src="images/pic06_3.png" alt="" class="image full"></figure>
+                            <h3>Agregar archivos al Staging Area</h3>
+                            <p>Una vez se ha creado el repositorio contenedor, y se ha creado o editado archivos en los mismos, es necesario agregarlos al Staging área, el cual es un espacio controlado por Git previo al control real de cambios realizado en el repositorio.</p>
+                            <figure><img src="https://git-scm.com/book/en/v2/images/lifecycle.png" alt="" class="image full"></figure>
+                            <p>Para tal fin se debe ejecutar el siguiente comando para agregar un archivo en específico</p>
+                            <figure><img src="images/pic06_4.png" alt="" class="image full"></figure>
+                            <p>O podemos usar el siguiente comando para agregar todos los archivos no controlados al Staging área</p>
+                            <figure><img src="images/pic06_5.png" alt="" class="image full"></figure>
+                            <h3>Revisando el estado de tus archivos</h3>
+                            <p>Mediante el siguiente comando se puede conocer el estado de los archivos que hacen parte del repositorio, además de el estado del repositorio en si mismo respecto al repositorio principal.</p>
+                            <figure><img src="images/pic06_6.png" alt="" class="image full"></figure>
+                            <p>Aunque la salida de este comando es bastante explícita es a su vez muy extensa. Git permite observar el estado de una forma más abreviada a través del siguiente comando</p>
+                            <figure><img src="images/pic06_7.png" alt="" class="image full"></figure>
+                            <h3>Ignorando Archivos</h3>
+                            <p>A veces es necesario evitar que Git añada específicamente algunos archivos o carpetas, para estos casos se puede crear un archivo llamado .gitignore donde se pueda referenciar estos casos específicos que se deseen ignorar.</p>                            
+                            <h3>Confirmar los cambios</h3>
+                            <p>Un commit registra un snapshot de los archivos controlados en el escritorio, es decir aquellos que se encuentran en el área de preparación.</p>
+                            <figure><img src="images/pic06_8.png" alt="" class="image full"></figure>                            
+                            <h3>Ver el historial de confirmaciones</h3>
+                            <p>Después de realizadas las confirmaciones, por cualquiera de los integrantes del equipo, es posible observar el historial de confirmaciones por medio del siguiente comando</p>
+                            <figure><img src="images/pic06_9.png" alt="" class="image full"></figure>                            
+                            <h3>Deshacer un archivo modificado</h3>
+                            <p>Para volver el estado de una confirmación, es posible realizarlo por medio del siguiente comando</p>
+                            <figure><img src="images/pic06_10.png" alt="" class="image full"></figure>
+                            <h3>Trabajar con el repositorio remoto</h3>
+                            <p>Hasta el momento hemos realizado cambios en el repositorio local de archivos, para enviar los cambios realizados al repositorio central, y que estos sean accedidos por los demás compañeros de trabajo es necesario hacer uso del siguiente comando</p>
+                            <figure><img src="images/pic06_11.png" alt="" class="image full"></figure>
+                            <p>Este comando enviará los cambios al repositorio del cual fue clonado. </p>
+                        </section>
+                    </div>
+
+                    <div class="3u">                        
+                        <section class="sidebar">
+                            <div class="contador">
+                                <div id="sfc35ry79bpdea4xhy1sqpuhbd4nf1m9ytl"></div>
+                                <script type="text/javascript" src="https://counter10.allfreecounter.com/private/counter.js?c=35ry79bpdea4xhy1sqpuhbd4nf1m9ytl&down=async" async></script>
+                                <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas com"><img src="https://counter10.allfreecounter.com/private/contadorvisitasgratis.php?c=35ry79bpdea4xhy1sqpuhbd4nf1m9ytl" border="0" title="contador de visitas com" alt="contador de visitas com"></a></noscript>
+                            </div>                            
+                            <div class="twitter">
+                                <a class="twitter-timeline" 
+                                    href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw"
+                                    data-height="400"
+                                    data-chrome="nofooter">Tweets by UniversidadUNAD</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>                            
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div id="copyright" class="container">
+                By Miguel Fonseca
+            </div>
+        </footer>
+    </body>
+</html>

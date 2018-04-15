@@ -42,16 +42,36 @@
                     <div class="9u">
                         <section>
                             <header>
-                                <h2>SISTEMA CONTROL DE VERSIONES (VCS)</h2>
+                                <h2>FUNDAMENTOS DE GIT</h2>
                             </header>
-                            <p>VCS, por sus siglas en inglés, Version Control System, es un sistema que permite registrar todos los cambios que se han realizado sobre un conjunto de archivos durante el ciclo de vida de desarrollo de un aplicativo informático. Aunque puede ser usado con otros fines, pero en este artículo se destacará su importancia en función al desarrollo de software.</p>
-                            <p>Este sistema permite navegar durante los diferentes cambios realizados, lo cual es una herramienta muy útil para el seguimiento y corrección de errores, y absolutamente necesario para el trabajo en equipo.</p>
-                            <h3>Tipos de sistemas control de versiones</h3>
-                            <ol>
-                                <li><a href="info1_1.html">Sistema local</a></li>
-                                <li><a href="info1_2.html">Sistema centralizado</a></li>
-                                <li><a href="info1_3.html">Sistema distribuido</a></li>
-                            </ol>
+                            <p>Git fue creado en el 2005 por Linus Torvalds como un sistema de control de versiones distribuido para el manejo del desarrollo del Kernel de Linux. Fue desarrollado como un sistema de código abierto que contenía lo mejor de los sistemas existentes hasta el momento. Aún así desde su nacimiento Git ha evolucionado y madurado conservando sus principales características.</p>
+                            <p>Las principales características de Git son las siguientes:</p>
+                            <ul>
+                                <li>Velocidad</li>
+                                <li>Diseño sencillo</li>
+                                <li>Fuerte apoyo en el desarrollo no lineal</li>
+                                <li>Completamente distribuido</li>
+                                <li>Capaz de manejar grandes proyectos</li>
+                            </ul>
+                            <p>La mayoría de los otros sistemas almacenan como un conjunto, los archivos y las modificaciones que se realizaron sobre los mismos. Lo cual hace mucho más lenta la navegación entre cambios.</p>
+                            <figure><img src="https://git-scm.com/book/en/v2/images/deltas.png" alt="" class="image full"></figure>
+                            <p>En cambio, Git almacena referencias a los archivos que no se han cambiado, de tal manera que los datos se manejan como una secuencia de copias instantáneas.</p>
+                            <figure><img src="https://git-scm.com/book/en/v2/images/snapshots.png" alt="" class="image full"></figure>
+                            <p>En Git, cualquier trabajo es local, por lo tanto, se puede trabajar incluso sin internet. Solo necesitaras internet para obtener y enviar los cambios al repositorio y a los demás participantes. Adicionalmente en Git todo es verificado mediante una suma de comprobación, lo cual garantiza la integridad de los archivos y de los cambios realizados.</p>
+                            <p>El flujo de trabajo básico en Git se maneja bajo 3 estados</p>
+                            <figure><img src="https://git-scm.com/book/en/v2/images/areas.png" alt="" class="image full"></figure>
+                            <ul>
+                                <li>
+                                    <h3>Working Directory: </h3> Lugar donde se modifica una serie de archivos en tu directorio de trabajo.
+                                </li>
+                                <li>
+                                    <h3>Staging Area: </h3> Espacio en el cual se preparan los archivos, añadiéndolos a tu área de preparación.
+                                </li>
+                                <li>
+                                    <h3>Repository:  </h3> Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.
+                                </li>
+                            </ul>
+                            <p>Git es un sistema multiplataforma, en algunos sistemas ya viene incluido, aún así la forma de instalación es sencilla y puede encontrarse más información para realizarla en la siguiente página web: <a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git">Git</a></p>
                         </section>
                     </div>
 
