@@ -5,9 +5,86 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="OVI de Diseño de Sitios Web" />
+        <meta name="description" content="OVI de Diseño de Sitios Web" />        
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+                <link rel="stylesheet" href="css/skel-noscript.css" />
+                <link rel="stylesheet" href="css/style.css" />
+                <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     </head>
     <body>
+        <div id="header">
+            <div class="container">                
+                <div id="logo">
+                    <h1><a href="index.html">Diseño de Sitios Web</a></h1>
+                </div>                
+                <nav id="nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                        <li><a href="#">SVC</a></li>
+                        <li><a href="#">GIT</a></li>
+                        <li><a href="#">GIT en el Servidor</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         
+        <div id="banner">
+            <div class="container">
+            </div>
+        </div>
+
+        <section id="page">
+            <div id="marketing" class="container">
+                <header>
+                    <h2>SISTEMA CONTROL DE VERSIONES (VCS)</h2>
+                </header>
+                <div class="row">
+                    <div class="4u">
+                        <article>
+                            <figure>
+                                <a href="#"><img src="images/pic01.png" alt="" class="image featured"></a>
+                            </figure>
+                            <header>
+                                <h2>Sistema local</h2>
+                            </header>
+                            <p class="subtitle">Comúnmente se posible encontrar situaciones en las que, al modificar un archivo de realice una copia del mismo antes de la modificación.</p>
+                            <a href="#" class="button">Ver más ...</a>
+                        </article>
+                    </div>
+                    <div class="4u">
+                        <article>
+                            <figure>
+                                <a href="#"><img src="images/pic02.png" alt="" class="image featured"></a>
+                            </figure>
+                            <header>
+                                <h2>Sistema centralizado</h2>
+                            </header>
+                            <p class="subtitle">Con la situación anterior es posible que, por fallas en el equipo donde se encuentra almacenado el archivo controlado, se pierda todo el trabajo realizado.</p>
+                            <a href="#" class="button">Ver más ...</a>
+                        </article>
+                    </div>
+                    <div class="4u">
+                        <article>
+                            <figure>
+                                <a href="#"><img src="images/pic03.png" alt="" class="image featured"></a>
+                            </figure>
+                            <header>
+                                <h2>Sistema distribuido</h2>
+                            </header>
+                            <p class="subtitle">Puesto que en el caso anterior el sistema esta centralizado, y se tiene dependencia en un servidor central, si esta falla, no habrá forma de guardar los cambios durante el tiempo en el que este caído este servidor.</p>
+                            <a href="#" class="button">Ver más ...</a>
+                        </article>
+                    </div>                    
+                </div>
+            </div>
+        </section>
     </body>
 </html>
