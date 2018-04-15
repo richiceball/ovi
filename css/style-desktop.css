@@ -38,6 +38,8 @@ body,input,textarea,select
     margin-top: 3em;
     padding-top: 2em;
     border-top: none;
+    text-align: justify;
+    line-height: 2em;
 }
 
 .homepage #main
