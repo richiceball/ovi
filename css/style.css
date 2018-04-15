@@ -121,7 +121,7 @@ article > :last-child
 section:last-child,
 article:last-child
 {
-    margin-bottom: 0;
+    margin-bottom: 65px;
 }
 
 .row > section,
@@ -900,7 +900,6 @@ ul.style5 a
     border-top: 1px solid #303030;
     letter-spacing: 1px;
     text-align: center;
-    color: rgba(255,255,255,.4);
 }
 
 #copyright .container
