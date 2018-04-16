@@ -28,9 +28,10 @@
                 <nav id="nav">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
+                        <li><a href="info4.html">ACTORES</a></li>
                         <li><a href="info1.html">SVC</a></li>
-                        <li><a href="info2_1.html">GIT</a></li>
-                        <li class="active"><a href="info3.html">GIT en el Servidor</a></li>
+                        <li class="active"><a href="info2_1.html">GIT</a></li>
+                        <li><a href="info3.html">GIT en el Servidor</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,14 +43,43 @@
                     <div class="9u">
                         <section>
                             <header>
-                                <h2>GIT EN EL SERVIDOR</h2>
+                                <h2>PRINCIPALES COMANDOS</h2>
                             </header>
-                            <p>A pesar de que se puede gestionar un propio servidor de Git, existen herramientas mas modernas, con todas las funciones y otras adicionales que pueden ser útiles para el desarrollo de aplicaciones.</p>
-                            <p>Entre las opciones de servidores Web de Git que tenemos están las siguientes:</p>
-                            <h3>GitLab</h3>
-                            <p>Es una aplicación web, de la cual puede descargarse una máquina virtual, o un instalador para la creación de un propio servidor moderno de control de versión. Aún así existe la versión web, la cual contiene varias características gratuitas como son aquellas que posibilitan la integración continua mientras se realiza el desarrollo de las aplicaciones.</p>
-                            <h3>GitHub</h3>
-                            <p>Es un servicio para alojamiento de repositorios, que funciona de manera similar que GitLab, pero que no permite la creación de repositorios privados. Su sistema es comercial, a diferencia de Git que es proyecto de código abierto, para acceder a la funcionalidad anteriormente descrita es necesario el pago de mensualidades, aunque es gratuito para alojar proyectos Open Source.</p>
+                            <p>Para iniciar con Git es necesario configurar la identidad de la persona, en cada una de las máquinas de desarrollo, esto con el fin de conocer quien realiza los cambios, para lo cual lo único que es necesario realizar es ejecutar los siguientes comandos desde la consola de comandos de sistema operativo:</p>
+                            <figure><img src="images/pic06_1.png" alt="" class="image full"></figure>
+                            <h3>Crear el repositorio de configuraciones</h3>
+                            <p>Es posible crear un repositorio en Git independiente, sin necesidad de usar uno de los ya existentes, de los cuales hablaremos mas adelante, para ello solo es necesario instalar Git Server y luego de esta ubicado en la carpeta que contendrá el repositorio, ejecutaremos:</p>
+                            <figure><img src="images/pic06_2.png" alt="" class="image full"></figure>
+                            <h3>Crear una copia del proyecto</h3>
+                            <p>Desde una máquina local, donde se realizará las modificaciones, se ejecutará el siguiente comando para crear un clon de la versión almacenada, desde aquí se empezará a desarrollar la aplicación.</p>
+                            <figure><img src="images/pic06_3.png" alt="" class="image full"></figure>
+                            <h3>Agregar archivos al Staging Area</h3>
+                            <p>Una vez se ha creado el repositorio contenedor, y se ha creado o editado archivos en los mismos, es necesario agregarlos al Staging área, el cual es un espacio controlado por Git previo al control real de cambios realizado en el repositorio.</p>
+                            <figure><img src="https://git-scm.com/book/en/v2/images/lifecycle.png" alt="" class="image full"></figure>
+                            <p>Para tal fin se debe ejecutar el siguiente comando para agregar un archivo en específico</p>
+                            <figure><img src="images/pic06_4.png" alt="" class="image full"></figure>
+                            <p>O podemos usar el siguiente comando para agregar todos los archivos no controlados al Staging área</p>
+                            <figure><img src="images/pic06_5.png" alt="" class="image full"></figure>
+                            <h3>Revisando el estado de tus archivos</h3>
+                            <p>Mediante el siguiente comando se puede conocer el estado de los archivos que hacen parte del repositorio, además de el estado del repositorio en si mismo respecto al repositorio principal.</p>
+                            <figure><img src="images/pic06_6.png" alt="" class="image full"></figure>
+                            <p>Aunque la salida de este comando es bastante explícita es a su vez muy extensa. Git permite observar el estado de una forma más abreviada a través del siguiente comando</p>
+                            <figure><img src="images/pic06_7.png" alt="" class="image full"></figure>
+                            <h3>Ignorando Archivos</h3>
+                            <p>A veces es necesario evitar que Git añada específicamente algunos archivos o carpetas, para estos casos se puede crear un archivo llamado .gitignore donde se pueda referenciar estos casos específicos que se deseen ignorar.</p>                            
+                            <h3>Confirmar los cambios</h3>
+                            <p>Un commit registra un snapshot de los archivos controlados en el escritorio, es decir aquellos que se encuentran en el área de preparación.</p>
+                            <figure><img src="images/pic06_8.png" alt="" class="image full"></figure>                            
+                            <h3>Ver el historial de confirmaciones</h3>
+                            <p>Después de realizadas las confirmaciones, por cualquiera de los integrantes del equipo, es posible observar el historial de confirmaciones por medio del siguiente comando</p>
+                            <figure><img src="images/pic06_9.png" alt="" class="image full"></figure>                            
+                            <h3>Deshacer un archivo modificado</h3>
+                            <p>Para volver el estado de una confirmación, es posible realizarlo por medio del siguiente comando</p>
+                            <figure><img src="images/pic06_10.png" alt="" class="image full"></figure>
+                            <h3>Trabajar con el repositorio remoto</h3>
+                            <p>Hasta el momento hemos realizado cambios en el repositorio local de archivos, para enviar los cambios realizados al repositorio central, y que estos sean accedidos por los demás compañeros de trabajo es necesario hacer uso del siguiente comando</p>
+                            <figure><img src="images/pic06_11.png" alt="" class="image full"></figure>
+                            <p>Este comando enviará los cambios al repositorio del cual fue clonado. </p>
                         </section>
                     </div>
 
